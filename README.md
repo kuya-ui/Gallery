@@ -14,7 +14,7 @@ Requirements
 
 * Navigate to the project directory
 
-* cd GALLERY
+* cd Gallery
 
 2. Create a virtual environment
 * Install Virtualenv pip install virtualenv
@@ -54,7 +54,7 @@ $ psql
 ## Known Bugs
 No known bugs yet
 ## Technologies Used
-* Python version 1.11.0.
+* Python version 1.11.
 * Django
 * Bootstrap.
 * PSQL database.
