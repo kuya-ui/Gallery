@@ -21,6 +21,28 @@ class Author(models.Model):
 
 class Location(models.Model):
     location_name = models.CharField(max_length=80)
+    def save_location(self):
+            self.save()
 
+    def __str__(self):
+            return self.location_name
+
+    @classmethod
+    def get_location(cls):
+        locations = cls.objects.all()
+        return locations
 class Category(models.Model):
     category_name = models.CharField(max_length=80)
+
+
+    def save_category(self):
+        self.save()
+
+    @classmethod
+    def get_categories(cls):
+        categories = cls.objects.all()
+
+        return categories
+
+    def __str__(self):
+        return self.category_name 
