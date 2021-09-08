@@ -30,11 +30,10 @@
                         </div>
                         <div class="modal-footer">
                             <p>{{pic.author}}</p>
-                            <a href="{{pic.image.url }}"> <input class="form-control" type="text" value="{{ pic.image.url }}" id="link"></a>
-                            <a onclick="myFunction()"><button type="button" class="btn btn-outline-success">Copy
-                                Link</button></a>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                            <input type="text" id="imagelink" class="form-control input-sm" value="{{ pic.image.url }}" class="hidden" style="display:none;">
+                            <button class="btn btn-primary btn-sm " onclick="CopyFunction()">
+                                <i class="fa fa-copy" style="color: #D6962C"></i> Copy Link
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
